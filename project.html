@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/66d5531b7c.js" crossorigin="anonymous"></script>
+    <script src="project.js"></script>
+    <title>My Project</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="asset/logo.png" alt="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+        <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+
+
+    <div class="add-project">
+        <form>
+            <h1 style="text-align: center;">ADD MY PROJECT</h1>
+            <div class="" style="margin-bottom: 10px;">
+              <label for="input-name" style="font-size: 20px; font-weight: 600">Project Name</label>
+              <input
+                type="text"
+                id="input-name"
+                style="
+                  width: 100%;
+                  height: 40px;
+                  background-color: #f4f3f3;
+                  border: 1px solid #c4c4c4;
+                  padding: 5px;
+                  margin-top: 5px;
+                  border-radius: 10px;"/>
+            </div>
+            <div class="container-flex-date">
+              <div style="margin-bottom: 10px">
+                <label for="input-start-date" style="font-size: 20px; font-weight: 600">Start Date</label>
+                <input
+                  type="date"
+                  id="input-start-date"
+                  style="
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f4f3f3;
+                    border: 1px solid #c4c4c4;
+                    padding: 3px;
+                    margin-top: 5px;
+                    border-radius: 8px;"/>
+              </div>
+              <div style="margin-bottom: 10px">
+                <label for="input-end-date" style="font-size: 20px; font-weight: 600">End Date</label>
+                <input
+                  type="date"
+                  id="input-end-date"
+                  style="
+                    width: 100%;
+                    height: 40px;
+                    background-color: #f4f3f3;
+                    border: 1px solid #c4c4c4;
+                    padding: 5px;
+                    margin-top: 5px;
+                    border-radius: 8px;"/>
+              </div>
+            </div>
+  
+            <div class="" style="margin-bottom: 10px">
+                <label for="input-desc" style="font-size: 20px; font-weight: 600">Description</label>
+              <textarea
+                id="input-desc"
+                style="
+                width: 100%;
+                background-color: #f4f3f3;
+                border: 1px solid #c4c4c4;
+                padding: 8px;
+                margin-top: 5px;
+                border-radius: 8px;
+                resize: vertical;
+                height: 100px;"></textarea>
+  
+            </div>
+            <label style="font-size: 20px; font-weight: 600" name="technologie">Technologies </label>
+            <div class="container-flex-date" for="technologies">
+                <div class="left">
+                    <input type="checkbox" name="icon" value="<i class='fa-brands fa-node-js' fa-xl></i>">
+                    <label for="node-js" class="checkbox-tech">Node Js</label> <br>
+                    <input type="checkbox" name="icon" value="<i class='fa-brands fa-react' fa-xl></i>">
+                    <label for="react-js" class="checkbox-tech">React Js</label>
+                </div>
+                <div class="right" style="margin-left: 30px;">
+                    <input type="checkbox" name="icon" value="<i class='fa-brands fa-android'></i>">
+                    <label for="android" class="checkbox-tech">Android</label> <br>
+                    <input type="checkbox" name="icon" value="<i class='fa-brands fa-java'></i>">
+                    <label for="java" class="checkbox-tech">Java</label>
+                </div>
+            </div>
+            <div class="left">
+                <label for="upload-image" style="font-size: 20px; font-weight: 600">Upload Image</label>
+                <div class="input-project-image-group">
+                  <label for="input-project-image">
+                    <p style="background-color: #adadad;
+                    border: 1px;
+                    height: 30px;
+                    border-radius: 8px 8px 8px 8px;
+                    font-size: 20px;
+                    padding: 6px;
+                    color: #dfdddd;
+                    font-weight: bold;">choose</p>
+                    <img src="asset/file.png" alt="file" />
+                  </label>
+                  <input type="file" id="input-project-image" hidden />
+                </div>
+  
+            </div>
+            <div class="edit-delete-button">
+                <button type="button" onclick="addProject()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <hr class="line" />
+    <div class="post-project">
+        <h1 style="text-align: center;">MY PROJECT</h1>
+        <div class="grid-container" id="project-list">  
+
+            <div class="grid-item" id="grid-item">
+                <div>
+                <a href="detail-project.html" target="_blank" style="text-decoration: none; color: black"><img src="asset/blog-img.png" alt="">
+                <div class="title">
+                    <h2>Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a></h2>
+                    <p>durasi : 3 bulan</p>
+                </div>
+                <p> Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+                    menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+                    ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+                    meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+                    dolor sit amet consectetur adipisicing elit. Quam, molestiae
+                    numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+                    eligendi debitis?</p>
+                <div class="tech-icon">
+                    <i class="fa-brands node-js"></i>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-android"></i>
+                </div>
+                <div class="button-group">
+                    <button type="button" onclick="">edit</button>
+                    <button type="button" onclick="">delete</button>
+                </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
